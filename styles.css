@@ -1,0 +1,525 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url('fonts/Montserrat-SemiBold.ttf');
+  font-weight: bold;
+}
+body {
+  font-family: 'Montserrat-Regular' !important;
+}
+.menu_logo {
+  width: 60%;
+  margin: auto;
+  height: 75px;
+  border-bottom: 2px solid white;
+}
+.menu {
+  font-size: 13px;
+  height: 100%;
+  float: right;
+  display: flex;
+  align-items: center;
+}
+.menu li {
+  display: inline-block;
+  margin: 0px 10px;
+  padding: 7px;
+}
+.menu li:last-child {
+  margin-right: 0px;
+}
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+.menu .last {
+  color: #4cb874;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.logo {
+  float: left;
+  padding: 20px 0px 20px 0px;
+}
+.header {
+  height: 850px;
+  background: linear-gradient(170deg, #f7f8ff 0px, #f7f8ff 820px, #ffffff 700px, #ffffff 850px);
+}
+.img-hero {
+  width: 80%;
+  height: 400px;
+  margin: auto;
+  margin-top: 100px;
+  background-image: url("assets/images/hero.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.img-hero-contain {
+  width: 400px;
+  margin-left: 130px;
+}
+.img-hero-contain span {
+  color: grey;
+  font-size: 13px;
+}
+.img-hero-contain hr {
+  color: grey;
+  opacity: 0.1;
+}
+.img-hero-contain h1 {
+  font-size: 35px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+.img-hero-contain .btn {
+  float: left;
+  padding: 10px 20px;
+  font-size: 13px;
+  border-radius: 5px;
+  margin-right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  border: none;
+}
+.img-hero-contain .second {
+  background-color: white;
+  color: #4cb874;
+  box-shadow: white;
+}
+.img-hero-contain .first {
+  color: white;
+  background-color: #4cb874;
+}
+.header .feature {
+  width: 270px;
+  height: 180px;
+  float: left;
+  background-color: white;
+  padding: 15px 100px 10px 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header .feature .line {
+  margin: -120px -100px 0px 0px;
+  padding-bottom: 25px;
+  height: 180px;
+  width: 40px;
+  border-left: 1px solid grey;
+  float: right;
+  opacity: 0.1;
+}
+.header .feature .arrow {
+  color: blue;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 160px;
+}
+.header .features {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+}
+.header .features h4 {
+  margin: 10px 0px;
+}
+.header .features span {
+  font-size: 13px;
+  color: grey;
+}
+.header .f1 {
+  margin-right: 30px;
+}
+.header .f2:hover,
+.header .f1:hover {
+  margin-top: -15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.company {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.Top-features {
+  width: 100%;
+  height: 760px;
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+}
+.Top-features .btns {
+  width: 515px;
+  margin: auto;
+}
+.Top-features h1 {
+  font-size: 35px;
+}
+.Top-features h2 {
+  font-size: 30px;
+}
+.Top-features .btn {
+  float: left;
+  font-size: 13px;
+  color: #4e92df;
+  padding: 5px 20px;
+}
+.Top-features .btn:hover {
+  background-color: #4e92df;
+  color: white;
+  border-radius: 20px;
+}
+.Top-features .table {
+  width: 100%;
+  margin-top: 80px;
+  height: 560px;
+}
+.Top-features .table .block:first-child,
+.Top-features .table .block:nth-child(3) {
+  border-right: 2px solid rgba(248, 248, 248, 0.9);
+  padding-left: 190px;
+  padding-right: 80px;
+}
+.Top-features .table .block {
+  float: left;
+  box-sizing: border-box;
+  border-bottom: 2px solid rgba(248, 248, 248, 0.9);
+  padding-left: 50px;
+  position: relative;
+  padding-right: 270px;
+  padding-top: 30px;
+  text-align: left;
+  height: 270px;
+  width: 50%;
+  vertical-align: top;
+}
+.Top-features .table .block span {
+  font-size: 13px;
+  color: grey;
+}
+.Top-features .table .block .more {
+  font-size: 13px;
+  color: #4e92df;
+  position: absolute;
+  bottom: 20px;
+}
+.Keep-form {
+  clear: both;
+  width: 800px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  height: 300px;
+}
+.Keep,
+.form {
+  height: 180px;
+}
+.Keep {
+  float: left;
+  padding-top: 20px;
+  width: 300px;
+}
+.Keep span {
+  padding-right: 100px;
+}
+.form {
+  width: 400px;
+  float: right;
+  font-size: 12px;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.form .text {
+  height: 25px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.form .textarea {
+  resize: none;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.Keep a {
+  text-decoration: none;
+  color: #4e92df;
+}
+.Keep-form .Keep span {
+  color: grey;
+}
+.Keep-form .Keep h1 {
+  font-size: 40px;
+}
+.form button {
+  color: white;
+  font-size: 13px;
+  padding: 7px 30px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #4cb874;
+}
+.footer-img {
+  background-image: url("assets/images/footer@2x.png");
+  width: 1300px;
+  height: 270px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  clear: both;
+}
+.footer {
+  width: 100%;
+  height: 460px;
+  background-color: #f7f8f8;
+  margin-top: -5px;
+}
+.footer .table {
+  margin: auto;
+  width: 600px;
+  border: 1px solid red;
+}
+.footer .table .footer-block {
+  border: 1px solid red;
+  padding-top: 50px;
+  padding-right: 80px;
+  color: grey;
+  font-size: 13px;
+  float: left;
+}
+.footer table .second {
+  clear: both;
+}
+.footer table .second img {
+  width: 100px;
+}
+@media (max-width: 425px) {
+  .header {
+    height: 1200px;
+    width: 100%;
+  }
+  .menu {
+    display: none;
+  }
+  .menu_logo {
+    width: 90%;
+    border-bottom: none;
+  }
+  .img-hero {
+    width: 100%;
+    padding: 10px;
+    height: 580px;
+    background-size: auto 60%;
+    background-position: -460px bottom;
+  }
+  .img-hero-contain {
+    margin-left: 10px;
+    width: 340px;
+  }
+  .features {
+    margin-top: -40px !important;
+    width: 90% !important;
+    height: 500px;
+  }
+  .features .feature {
+    float: none;
+    width: 227px !important;
+  }
+  .features .line {
+    float: none !important;
+    padding: 0px 130px 0px 0px;
+    margin-left: -30px !important;
+    height: 8px !important;
+    width: 100% !important;
+    margin-top: 20px !important;
+    border-top: 1px solid grey;
+    border-left: none !important;
+  }
+  .features .arrow {
+    margin-top: 0px !important;
+    text-align: right !important;
+    margin-right: -120px;
+  }
+  .features .f1 {
+    margin-bottom: 30px;
+  }
+  .features .f1:hover {
+    margin-bottom: 45px !important;
+    margin-top: -55px !important;
+  }
+  .company {
+    width: 90% !important;
+    height: 200px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .Top-features {
+    clear: both;
+  }
+  .Top-features .b2,
+  .Top-features .b3 {
+    display: none;
+  }
+  .Top-features .btns {
+    width: 150px;
+    margin: auto;
+  }
+  .Top-features .table {
+    width: 90% !important;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .Top-features .block {
+    width: 100% !important;
+    padding: 0px !important;
+  }
+  .Keep-form {
+    width: 90%;
+  }
+  .Keep-form .Keep {
+    float: none;
+  }
+  .Keep-form .form {
+    float: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+  }
+  .footer-img {
+    width: 100%!important;
+    height: 200px;
+    background-size: auto 90%;
+    background-position: -70px bottom;
+    margin-top: 300px;
+  }
+  .footer table {
+    display: none;
+  }
+}
