@@ -140,6 +140,28 @@ body {
   height: 75px;
   border-bottom: 2px solid white;
 }
+.menu_logo .mobile-menu {
+  display: none;
+}
+.menu_logo .mobile-menu-active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 110px;
+  height: 155px;
+  display: none;
+  background-color: white;
+  z-index: 9999999;
+}
+.menu_logo .mobile-menu-active ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu_logo .mobile-menu-active ul li {
+  padding: 8px 20px;
+}
+.menu_logo .mobile-menu-active a {
+  text-decoration: none;
+  color: black;
+}
 .menu {
   font-size: 13px;
   height: 100%;
@@ -151,18 +173,20 @@ body {
 .menu li {
   display: inline-block;
   margin: 0px 10px;
-  padding: 7px;
-}
-.menu li:last-child {
-  margin-right: 0px;
 }
 .menu a {
   text-decoration: none;
   color: black;
 }
 .menu .last {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 0px;
   color: #4cb874;
   background-color: white;
+  padding: 7px;
+  border: none;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -201,6 +225,7 @@ body {
   margin-bottom: 30px;
 }
 .img-hero-contain .btn {
+  cursor: pointer;
   float: left;
   padding: 10px 20px;
   font-size: 13px;
@@ -305,6 +330,9 @@ body {
 .Top-features .btns .b1 {
   margin-left: 20px;
 }
+.Top-features .btns img {
+  display: none;
+}
 .Top-features .btn {
   float: left;
   font-size: 13px;
@@ -328,11 +356,14 @@ body {
   padding-left: 240px;
   padding-right: 80px;
 }
+.Top-features .table .block:first-child,
+.Top-features .table .block:nth-child(2) {
+  border-top: 2px solid rgba(248, 248, 248, 0.9);
+}
 .Top-features .table .block {
   float: left;
   box-sizing: border-box;
   border-bottom: 2px solid rgba(248, 248, 248, 0.9);
-  border-top: 2px solid rgba(248, 248, 248, 0.9);
   padding-left: 50px;
   position: relative;
   padding-right: 260px;
@@ -412,6 +443,7 @@ body {
   font-size: 40px;
 }
 .form button {
+  cursor: pointer;
   border: none;
   color: white;
   font-size: 13px;
@@ -482,6 +514,17 @@ body {
     width: 90%;
     border-bottom: none;
   }
+  .mobile-menu {
+    display: block!important;
+    float: right;
+    margin-top: 25px;
+  }
+  .mobile-menu:hover {
+    display: none;
+  }
+  .mobile-menu:hover .mobile-menu-active {
+    display: block!important;
+  }
   .img-hero {
     width: 100%;
     padding: 10px;
@@ -493,21 +536,37 @@ body {
     margin-left: 10px;
     width: 340px;
   }
+  .img-hero-contain h1 {
+    font-size: 30px;
+  }
   .features {
     margin-top: -40px !important;
+    box-sizing: border-box;
     width: 90% !important;
     height: 500px;
+    flex-wrap: wrap;
+  }
+  .features h1 {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: normal!important;
+  }
+  .features span {
+    font-size: 18px;
+    line-height: 25px;
   }
   .features .feature {
-    float: none;
-    width: 227px !important;
+    clear: both;
+    width: 100%;
+    height: 280px;
+    padding-right: 15px!important;
   }
   .features .line {
     float: none !important;
     padding: 0px 130px 0px 0px;
     margin-left: -30px !important;
     height: 8px !important;
-    width: 100% !important;
+    width: 230px !important;
     margin-top: 20px !important;
     border-top: 1px solid grey;
     border-left: none !important;
@@ -519,26 +578,39 @@ body {
   }
   .features .f1 {
     margin-bottom: 30px;
+    margin-right: 0px;
   }
   .features .f1:hover {
     margin-bottom: 45px !important;
-    margin-top: -55px !important;
+    margin-top: -15px !important;
   }
   .company {
     width: 90% !important;
+    margin-top: 230px;
     height: 200px;
     flex-wrap: wrap;
     justify-content: space-around;
   }
   .Top-features {
+    margin-top: 70px;
     clear: both;
+  }
+  .Top-features h1 {
+    font-size: 30px;
+  }
+  .Top-features .b1 {
+    font-size: 18px!important;
+  }
+  .Top-features .b1 img {
+    display: block!important;
+    float: right;
   }
   .Top-features .b2,
   .Top-features .b3 {
     display: none;
   }
   .Top-features .btns {
-    width: 150px;
+    width: 240px;
     margin: auto;
   }
   .Top-features .table {
@@ -549,18 +621,53 @@ body {
   .Top-features .block {
     width: 100% !important;
     padding: 0px !important;
+    padding-right: 30px!important;
+    border-right: 0px!important;
+    height: 80%!important;
+  }
+  .Top-features .block h2 {
+    font-size: 30px;
+  }
+  .Top-features .block span {
+    font-size: 18px!important;
+    line-height: 25px!important;
+  }
+  .Top-features .block .more {
+    position: relative!important;
+    margin-top: 70px!important;
+    font-size: 18px!important;
   }
   .Keep-form {
     width: 90%;
+    margin-top: 1200px!important;
+    clear: both;
+  }
+  .Keep-form label {
+    font-size: 18px!important;
   }
   .Keep-form .Keep {
     float: none;
+    margin-bottom: 45px;
+  }
+  .Keep-form .Keep h1 {
+    font-size: 30px!important;
+    margin-bottom: 15px;
+  }
+  .Keep-form .Keep .span {
+    font-size: 18px!important;
   }
   .Keep-form .form {
+    margin-top: 80px!important;
     float: none;
     width: 100%;
     box-sizing: border-box;
     padding: 0px;
+  }
+  .Keep-form .form textarea {
+    width: 100%;
+  }
+  .Keep-form .form .text {
+    width: 100%;
   }
   .footer-img {
     width: 100%!important;
@@ -569,7 +676,17 @@ body {
     background-position: -70px bottom;
     margin-top: 300px;
   }
-  .footer table {
+  .footer {
+    height: 180px;
+  }
+  .footer .table {
     display: none;
+  }
+  .footer .second {
+    width: 90%!important;
+  }
+  .footer .second span {
+    float: left!important;
+    margin-top: 20px;
   }
 }
